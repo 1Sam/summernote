@@ -8,7 +8,7 @@ xe/modules/editor/skins/summernote/
 참고 : http://summernote.org/#/features
 
 
-
+<pre>
 <!--@foreach(Context::getJsFile() as $key => $jsfile)-->
 
 	<!--@if(preg_match('/jquery.prettyPhoto.js/i',$jsfile['file']))-->{@$ptyptojs='Y'}<!--@end-->
@@ -32,4 +32,4 @@ xe/modules/editor/skins/summernote/
 
 <load target="jquery.prettyPhoto.js" />
 
-으로 수정하면 됩니다.
+으로 수정하면 됩니다. </pre>
