@@ -1,0 +1,26 @@
+<!-- include libries(jQuery, bootstrap, fontawesome) -->
+
+
+
+<!-- include summernote css/js-->
+<load target="js/summernote.min.js" />
+<load target="css/summernote.css" />
+
+<input type="hidden" name="editor_sequence" id="dreditor_dummy_{$editor_sequence}" value="{$editor_sequence}" />
+
+<div id="summernote">Hello Summernote</div>
+
+<script>
+jQuery(document).ready(function() {
+	jQuery('#summernote').summernote();
+	
+	jQuery('#summernote').code(jQuery("input[name='content']").val());
+	
+
+});
+	jQuery("#fo_write").on("submit", function (){
+		var sHTML = jQuery('#summernote').code();
+		jQuery("input[name='content']").val(sHTML);
+	});
+
+</script>
