@@ -3,3 +3,6 @@
 
 
 xe/modules/editor/skins/summernote/
+
+
+참고 : http://summernote.org/#/features
